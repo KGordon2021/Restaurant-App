@@ -10,14 +10,15 @@
 <body>
     <%- include('../views/partials/nav.ejs') %>
 <div class="adminViews">
-    <h1>View of all orders recieved</h1>
 
     <%
          if (mySession.loggedin == true){ %>
-    <h3>Welcome <%= mySession.first_Nm %>  </h3>
+    <h3 class="wlcome">Welcome <%= mySession.first_Nm %>  </h3>
     <%  
        }
      %> 
+
+    <h1>View of all orders recieved</h1>
     
     <table>
         <thead>
@@ -40,11 +41,11 @@
                 <td><%= customerOrders[i].customer_email %></td>
                 <td><%= customerOrders[i].customer_order %></td>           
                 <td><%= customerOrders[i].order_numbers %> </td>           
-                <td><%= new Date(customerOrders[i].order_date).toLocaleDateString('fr-CA') %> at <%= customerOrders[i].order_time %></td>           
+                <td><%= new Date(customerOrders[i].order_date).toLocaleString() %> at <%= customerOrders[i].order_time %></td>           
                 <td class="centered">
                     <a class="light" href="/viewOrders/edit/<%=customerOrders[i].id%>">Update</a> <!--this refers to the index of the current data collection which is currently stored as data-->
                     <a class="warn"  href="/viewOrders/delete/<%=customerOrders[i].id%>">Remove</a>
-                    <a class="add" href="" style="margin-right: 10px;">Confirm</a>
+                    <a class="add" href="" style="margin-right: 10px;">Confirm Order</a>
                 </td>
 
             </tr>
@@ -58,7 +59,10 @@
     </table>
 </div>
 
+<div class="logout">
     <a href="">Logout</a>
+    </div>
+
 
 </body>
 </html>
