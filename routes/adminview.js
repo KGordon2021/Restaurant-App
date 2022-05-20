@@ -10,7 +10,8 @@ router.get('/admin', function(req, res, next) {
             throw err 
             } else {
                 res.render('../views/adminview', {
-                    customerOrders: rows
+                    customerOrders: rows,
+                    mySession: req.session
                 });
             }
         })

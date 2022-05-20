@@ -9,10 +9,16 @@
 </head>
 <body>
     <%- include('../views/partials/nav.ejs') %>
-    <h1>View of all orders recieved</h1>
 <div class="adminViews">
+    <h1>View of all orders recieved</h1>
 
-
+    <%
+         if (mySession.loggedin == true){ %>
+    <h3>Welcome <%= mySession.first_Nm %>  </h3>
+    <%  
+       }
+     %> 
+    
     <table>
         <thead>
             <tr>
@@ -50,8 +56,9 @@
            <% } %>
         </tbody>
     </table>
+</div>
 
-    <a href="/logout">Logout</a>
+    <a href="">Logout</a>
 
 </body>
 </html>
