@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/styles.css">
+    <title>View Orders</title>
+</head>
+<body>
+    <%- include('../views/partials/nav.ejs') %>
+    <h1>View of all orders recieved</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Customer Order Id #</th>
+                <th>Customer Email Address </th>
+                <th>Customer Order</th>
+                <th>Csutomer Order Number</th>
+                <th>Date and Time</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <% if(customerOrders.length) {
+                for(var i = 0; i < customerOrders.length; i++) { 
+            %>
+            <tr>
+                <td class="centered"><%= customerOrders[i].id %></td>
+                <td><%= customerOrders[i].customer_email %></td>
+                <td><%= customerOrders[i].customer_order %></td>           
+                <td><%= customerOrders[i].order_number %> </td>           
+                <td><%= new Date(customerOrders[i].order_date).toLocaleDateString('fr-CA') %> at <%= customerOrders[i].order_time %></td>           
+                <td class="centered">
+                    <a class="light" href="">Update</a> <!--this refers to the index of the current data collection which is currently stored as data-->
+                    <a class="warn" href="">Remove</a>
+                    <a class="add" href="" style="margin-right: 10px;">Confirm</a>
+                </td>
+
+            </tr>
+               <% }
+          }else{ %>
+            <tr>
+                <td>No Current Orders Listed</td>
+            </tr>
+           <% } %>
+        </tbody>
+    </table>
+
+    <a href="/logout">Logout</a>
+
+</body>
+</html>

@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+nav {
+     background: rgb(5, 5, 84, 0.8);
+     text-decoration: none;
+     top: 0;
+     position: fixed;
+     z-index: 999;
+     width: 100%;
+     display: flex;
+     justify-content: flex-end;
+     padding: 5px 50px;
+}
+
+nav .left {
+    margin-right: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 8px;
+    margin: 0 10px;
+}
+
+.landing {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 10px solid rgb(5, 5, 84, 0.8);
+    border-left: 10px solid rgb(5, 5, 84, 0.8);
+}
+
+.landing .imgBx {
+    width: 35%;
+    height: 100%
+}
+
+.landing .imgBx img {
+    width: 100%;
+    height: 100%
+}
+
+.landing .welcome {
+    width: 30%;
+    height: 100%;
+    border: 10px solid rgb(5, 5, 84, 0.8);
+    text-align: center;
+    /* padding-top: 20%; */
+    background: url('https://simplyhomecooked.com/wp-content/uploads/2019/05/Meusli-yogurt-parfait-with-berries.jpg');
+}
+
+.landing .welcome .fillie {
+    backdrop-filter: blur(20px);
+    background: rgb(255,255,255,0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.landing .welcome .fillie .bigger {
+    color: red;
+    font-size: 60px;
+
+}
+
+.landing .welcome .fillie hr {
+    width: 300px;
+    border: 2px solid red;
+    background-color: red;
+    margin-left: 60px;
+}
+
+.landing .welcome .fillie h1 {
+    padding-top: 50%;
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    color: rgb(5, 5, 84, 0.8)
+}
+
+.landing .welcome .fillie .someText {
+    padding-top: 5%;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: oblique;
+}
+
+.landing .welcome .fillie .res {
+    margin-top: 10%;
+    border-bottom: 4px solid rgb(5, 5, 84, 0.8);
+    text-align: center;
+    font-size: 24px;
+    width: 200px;
+    margin-left: 120px;
+    cursor: pointer;
+}
+
+.landing .welcome .fillie button {
+    margin: 10px 0px;
+    padding: 8px;
+    width: 140px;
+    border: 1px solid silver;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.landing .welcome .fillie .left {
+    background: green;
+    border: none;
+
+}
+
+.landing .welcome .fillie .socials {
+    width: 45%;
+    height: 8%;
+    margin-left: 110px;
+    margin-top: 20px;
+}
+
+.landing .welcome .fillie .socials img {
+    width: 100%;
+    height: 100%;
+}
+
+/*Styles for Login Page*/
+
+.login{
+    width: 100%;
+    height: 100vh;
+    border: 2px solid red;
+}
+
+.login form {
+    border: 10px solid rgb(5, 5, 84, 0.8);
+    width: 400px;
+    margin-top: 6%;
+    margin-left: 38%;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.login form .profile {
+    width: 50%;
+    height: 20%;
+    text-align: center;
+    border-radius: 50%;
+    border: 5px solid rgb(5, 5, 84, 0.8);
+    margin-left: 100px;
+}
+
+.login form .profile img{
+    width: 100%;
+    height: 100%;
+}
+
+.login form h1 {
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.login form .name {
+    /* font-size: 20px; */
+    margin: 15px 0px;
+}
+
+.login form .name label {
+    font-size: 20px;
+}
+
+.login form input {
+    padding: 3px 8px;
+    /* border-radius: 5px; */
+    outline: none;
+    border: none;
+    border-bottom: 4px solid rgb(5, 5, 84, 0.8);
+    margin-top: 10px;
+}
+
+.login form .submit {
+    width: 100%;
+}
+
+.login form .submit input[type="submit"] {
+    width: 130px;
+    border:none;
+    background: rgb(5, 5, 84, 0.8);
+    padding: 5px 8px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/*Menu Page styles*/
+
+.menu {
+    width: 100%;
+    height: 100%;
+}
+
+.menu .landing2 .imgBox {
+    width: 100%;
+    height: 500px;
+    border-bottom: 5px solid rgb(5, 5, 84, 0.8);
+}   
+
+.menu .landing2 .imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+.menu .landing2 .welcome {
+    width: 40%;
+    background: rgba(255,255,255);
+    border: 10px solid darkred;
+    transform: translate(80px, -70px)
+}
+
+.menu .landing2 .welcome h1 {
+    font-size: 40px;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu .landing2 .welcome p {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 10px;
+    font-style: oblique;
+    text-align: center;
+}
+
+.menu .specials {
+    width: 100%;
+    height: 100vh;
+    padding: 50px 100px;
+}
+
+.menu .specials .txt {
+    width: 100%;
+}
+
+.menu .specials .txt h2 {
+    font-size: 50px;
+    font-weight: 500;
+    width: 500px;
+    margin-left: 500px;
+    text-align: center;
+    font-style: oblique;
+    padding-bottom: 10px;
+    border-bottom: 5px solid darkred;
+
+}
+
+.menu .specials .specialsListing {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.menu .specials .specialsListing .specs{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu .specials .specialsListing .specs .imgBoxs{
+    width: 400px;
+    height: 400px;
+    border: 10px solid darkred;
+}
+
+.menu .specials .specialsListing .specs .imgBoxs img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu .specials .specialsListing .specs .dets {
+    text-align: center;
+    font-weight: 500;
+    padding: 5px 30px;
+    border: 5px solid darkblue;
+
+}
+
+.menu .specials .specialsListing .specs .dets .namePrice {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu .specials .specialsListing .specs .dets .btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.menu .specials2 {
+    width: 100%;
+    padding: 50px 100px;
+}
+
+.menu .specials2 .txt {
+    width: 100%;
+}
+
+.menu .specials2 .txt h2 {
+    font-size: 50px;
+    font-weight: 500;
+    width: 500px;
+    margin-left: 500px;
+    text-align: center;
+    font-style: oblique;
+    padding-bottom: 10px;
+    border-bottom: 5px solid darkred;
+}
+
+.menu .specials2 .specialsListing {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.menu .specials2 .specialsListing .specs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.menu .specials2 .specialsListing .specs .imgBoxs{
+    width: 400px;
+    height: 400px;
+    border: 10px solid darkred;
+}
+
+.menu .specials2 .specialsListing .specs .imgBoxs img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu .specials2 .specialsListing .specs .dets {
+    text-align: center;
+    font-weight: 500;
+    padding: 5px 30px;
+    border: 5px solid darkblue;
+
+}
+
+.menu .specials2 .specialsListing .specs .dets .namePrice {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu .specials2 .specialsListing .specs .dets .btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu .orderingForm {
+    width: 100%;
+    padding: 50px 100px;
+}
+
+.menu .orderingForm h2 {
+    font-size: 50px;
+    font-weight: 500;
+    width: 500px;
+    margin-left: 500px;
+    text-align: center;
+    font-style: oblique;
+    padding-bottom: 10px;
+    border-bottom: 5px solid darkred;
+}
+
+.menu .orderingForm form {
+    width: 100%;
+    border: 10px solid darkblue;
+    padding: 30px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.menu .orderingForm form .email{
+    margin: 20px 0px;
+}
+
+.menu .orderingForm form .email label, .menu .orderingForm form .order label  {
+    font-size: 25px;
+    font-style: oblique;
+}
+
+.menu .orderingForm form input[type="text"] {
+    width: 400px;
+    padding: 5px 8px;
+    border: 5px solid navy;
+    margin-top: 8px;
+}
+
+.menu .orderingForm form select {
+    width: 400px;
+    padding: 5px 8px;
+    border: 5px solid navy;
+    margin-top: 8px;
+}
+
+.menu .orderingForm form input[type=submit] {
+    width: 200px;
+    margin-top: 30px;
+    padding: 10px 8px;
+    background: navy;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/*Styles for viewOrder*/
+.viewOrders {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.viewOrders .imgBox {
+    width: 500px;
+    height: 600px;
+    border: 5px solid darkred;
+
+}
+
+.viewOrders .imgBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.viewOrders .form {
+    width: 400px;
+    height: 400px;
+    padding: 20px 50px;
+    border:10px solid darkred;
+    text-align: center;
+    margin-top: 80px;
+    transform: translateX(-50px);   
+    backdrop-filter: blur(2px);
+    background: rgb(255,255,255,0.5);
+}
+
+.viewOrders .form h1 {
+    font-size: 40px;
+    padding: 10px 0px;
+    font-weight: 500;
+}
+
+.viewOrders .form label {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.viewOrders .form input[type="text"] {
+    width: 250px;
+    margin: 10px 0px;
+    padding: 5px 8px;
+    border: 2px solid darkred; 
+}
+
+.viewOrders .form input[type="submit"] {
+    width: 150px;
+    /* margin: 10px 0px; */
+    padding: 5px 8px;
+    background: darkred; 
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+}

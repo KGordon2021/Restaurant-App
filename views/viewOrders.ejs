@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/styles.css">
+    <title>View Orders</title>
+</head>
+<body>
+    <%- include('../views/partials/nav.ejs') %>
+
+    <div class="viewOrders">
+        <div class="imgBox">
+            <img src="../public/menu_landing2.jpg" alt="">
+        </div>
+        <div class="form">
+            <h1>View Your Orders</h1>
+            <form action="/orders/viewReciept" method="post">
+                <input type="hidden" name="">
+                <div class="cust_email">
+                    <label for="cust_eMail">Please provide email:</label>
+                    <input type="text" name="cust_eMail" placeholder="abc@efg.com">
+                </div>
+                <div class="ran_Num">
+                    <label for="cust_eMail">Please provide order number:</label>
+                    <input type="text" name="ran_Num" placeholder="ab234May22">
+                </div>
+                <div class="sub">
+                    <input type="submit" value="view order">
+                </div>
+            </form>
+        
+        </div>
+    </div>
+   
+    
+</body>
+</html>
